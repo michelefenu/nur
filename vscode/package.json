@@ -1,7 +1,7 @@
 {
-  "name": "nuraghe-theme-vscode",
-  "displayName": "Nuraghe Theme",
-  "description": "Nuraghe is an accessible dark theme inspired by Sardinian tradition, featuring warm, distinctive colors for software development in VSCode, DevTools, Vim, and terminal.",
+  "name": "nur-theme-vscode",
+  "displayName": "Nur Theme",
+  "description": "Nur is an accessible dark theme inspired by Sardinian tradition, featuring warm, distinctive colors for software development in VSCode, DevTools, Vim, and terminal.",
   "version": "0.0.1",
   "publisher": "michelefenu",
   "repository": {
@@ -18,9 +18,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Nuraghe",
+        "label": "Nur",
         "uiTheme": "vs-dark",
-        "path": "./themes/nuraghe.json"
+        "path": "./themes/nur.json"
       }
     ]
   }
