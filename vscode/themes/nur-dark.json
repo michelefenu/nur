@@ -105,7 +105,7 @@
     "terminal.ansiBlack": "#23272b",
     "terminal.ansiRed": "#fc7261",
     "terminal.ansiGreen": "#98bc6d",
-    "terminal.ansiYellow": "#ffe066",
+    "terminal.ansiYellow": "#e8c547",
     "terminal.ansiBlue": "#1ca4c7",
     "terminal.ansiMagenta": "#e89b7e",
     "terminal.ansiCyan": "#6fa3d2",
@@ -113,7 +113,7 @@
     "terminal.ansiBrightBlack": "#6e7f5c",
     "terminal.ansiBrightRed": "#fc7261",
     "terminal.ansiBrightGreen": "#98bc6d",
-    "terminal.ansiBrightYellow": "#ffe066",
+    "terminal.ansiBrightYellow": "#e8c547",
     "terminal.ansiBrightBlue": "#1ca4c7",
     "terminal.ansiBrightMagenta": "#e89b7e",
     "terminal.ansiBrightCyan": "#6fa3d2",
@@ -338,7 +338,7 @@
         "meta.attribute"
       ],
       "settings": {
-        "foreground": "#ffe066"
+        "foreground": "#e8c547"
       }
     },
     {
@@ -602,7 +602,7 @@
         "entity.other.attribute-name.tsx"
       ],
       "settings": {
-        "foreground": "#ffe066"
+        "foreground": "#e8c547"
       }
     },
     {
@@ -654,6 +654,6 @@
     "interface": "#8ebdb6",
     "enum": "#8ebdb6",
     "typeParameter": "#8ebdb6",
-    "decorator": "#ffe066"
+    "decorator": "#e8c547"
   }
 }

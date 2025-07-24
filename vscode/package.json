@@ -18,9 +18,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Nur",
+        "label": "Nur Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/nur.json"
+        "path": "./themes/nur-dark.json"
+      },
+      {
+        "label": "Nur Light",
+        "uiTheme": "vs",
+        "path": "./themes/nur-light.json"
       }
     ]
   }
