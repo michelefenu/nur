@@ -147,8 +147,6 @@
     "titleBar.activeBackground": "#1d2024",
     "titleBar.activeForeground": "#e2dbc4",
     "titleBar.border": "#8ebdb633",
-    "titleBar.inactiveBackground": "#1d2024",
-    "titleBar.inactiveForeground": "#6e7f5c",
     "walkThrough.embeddedEditorBackground": "#1d2024",
     "welcomePage.background": "#23272b",
     "welcomePage.buttonBackground": "#1d2024",
