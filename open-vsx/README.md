@@ -13,7 +13,7 @@
 ## Platforms
 
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode)
-- [Cursor](https://marketplace.cursor.com/items?itemName=michelefenu.nur-theme)
+- [Cursor](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
 
 
 ## Palette and inspirations
