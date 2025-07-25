@@ -2,21 +2,18 @@
 
 # Nur Theme
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/michelefenu.nur-theme-vscode?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/michelefenu.nur-theme-vscode?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode) [![Open VSX Version](https://img.shields.io/open-vsx/v/michelefenu/nur-theme-open-vsx?label=Open%20VSX)](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
 
-[Nur](https://nur.fenu.dev) is a Visual Studio Code theme designed to provide a pleasant experience for long coding sessions in any programming language.
+[Nur](https://nur.fenu.dev) is a Visual Studio Code and Cursor theme designed to provide a pleasant experience for long coding sessions in any programming language.
 
 - Warm, relaxing and accessible color palette
 - Markup and Code highlighting optimized for web development
 - Light and Dark modes
 
-## Installation
+## Platforms
 
-### Visual Studio Code / Cursor
-
-1. Install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme)
-2. Open the Command Palette (Ctrl+Shift+P)
-3. Type `Preferences: Color Theme` and select `Nur Theme`
+- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode)
+- [Cursor](https://marketplace.cursor.com/items?itemName=michelefenu.nur-theme)
 
 
 ## Palette and inspirations
