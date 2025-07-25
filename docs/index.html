@@ -9,40 +9,247 @@
       background: #23272b;
       color: #e2dbc4;
       font-family: system-ui, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      line-height: 1.6;
       margin: 0;
+      padding: 2rem;
     }
     .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .header {
       text-align: center;
-      padding: 2rem;
-      border-radius: 12px;
-      background: rgba(34, 39, 43, 0.95);
-      box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+      padding: 2rem 0 3rem 0;
+      border-bottom: 1px solid rgba(110, 127, 92, 0.3);
+      margin-bottom: 3rem;
+    }
+    .header img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
     }
     h1 {
-      margin-bottom: 0.5em;
-      font-size: 2.5em;
+      margin: 0 0 0.5em 0;
+      font-size: 3em;
       letter-spacing: 0.05em;
+      color: #e2dbc4;
     }
-    p {
+    .subtitle {
       color: #bdb6a3;
-      margin-bottom: 2em;
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
     }
-    .placeholder {
-      color: #6e7f5c;
+    .badges {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .badge {
+      background: #6fa3d2;
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: background 0.2s;
+    }
+    .badge:hover {
+      background: #5a8a82;
+    }
+    .content {
+      display: grid;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 768px) {
+      .content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+    .section {
+      background: rgba(34, 39, 43, 0.95);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    }
+    .section h2 {
+      color: #fc7261;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5em;
+    }
+    .section h3 {
+      color: #e8c547;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .features {
+      grid-column: 1 / -1;
+    }
+    .features ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      background: rgba(110, 127, 92, 0.2);
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 4px solid #98bc6d;
+    }
+    .platforms {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .platform-link {
+      background: #5a8a82;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .platform-link:hover {
+      background: #6fa3d2;
+    }
+    .palette-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .palette-table th,
+    .palette-table td {
+      padding: 0.8rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(110, 127, 92, 0.3);
+    }
+    .palette-table th {
+      background: rgba(110, 127, 92, 0.2);
+      color: #e8c547;
+    }
+    .color-swatch {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .inspiration {
+      grid-column: 1 / -1;
+      text-align: center;
       font-style: italic;
+      color: #bdb6a3;
+    }
+    .footer {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(110, 127, 92, 0.3);
+      color: #bdb6a3;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Nur Theme</h1>
-    <p class="placeholder">This is a placeholder page for the Nur Theme documentation site.</p>
-    <p>More content coming soon.</p>
+    <div class="header">
+      <img src="../assets/images/icon.png" alt="Nur Theme Icon">
+      <h1>Nur Theme</h1>
+      <p class="subtitle">A Visual Studio Code and Cursor theme designed to provide a pleasant experience for long coding sessions in any programming language.</p>
+      <div class="badges">
+        <a href="https://opensource.org/licenses/MIT" class="badge">MIT License</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode" class="badge">VS Marketplace</a>
+        <a href="https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx" class="badge">Open VSX</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="section features">
+        <h2>Features</h2>
+        <ul>
+          <li><strong>Warm, relaxing and accessible color palette</strong> - Designed for comfortable long coding sessions</li>
+          <li><strong>Markup and Code highlighting optimized for web development</strong> - Enhanced syntax highlighting</li>
+          <li><strong>Light and Dark modes</strong> - Choose the mode that suits your preference</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Platforms</h2>
+        <div class="platforms">
+          <a href="https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode" class="platform-link">Visual Studio Code</a>
+          <a href="https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx" class="platform-link">Cursor</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Nur Dark Palette</h2>
+        <table class="palette-table">
+          <thead>
+            <tr>
+              <th>Usage</th>
+              <th>Name</th>
+              <th>Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Background</td><td>Ossidiana</td><td><span class="color-swatch" style="background-color: #23272b;"></span>#23272b</td></tr>
+            <tr><td>Foreground</td><td>Orbace</td><td><span class="color-swatch" style="background-color: #e2dbc4;"></span>#e2dbc4</td></tr>
+            <tr><td>Comment</td><td>Ulivo</td><td><span class="color-swatch" style="background-color: #6e7f5c;"></span>#6e7f5c</td></tr>
+            <tr><td>Function</td><td>Corallo</td><td><span class="color-swatch" style="background-color: #fc7261;"></span>#fc7261</td></tr>
+            <tr><td>Variable</td><td>Ocra</td><td><span class="color-swatch" style="background-color: #e19c3a;"></span>#e19c3a</td></tr>
+            <tr><td>Number</td><td>Lavanda</td><td><span class="color-swatch" style="background-color: #9d80b7;"></span>#9d80b7</td></tr>
+            <tr><td>Attribute</td><td>Oro</td><td><span class="color-swatch" style="background-color: #e8c547;"></span>#e8c547</td></tr>
+            <tr><td>Keyword</td><td>Turchese</td><td><span class="color-swatch" style="background-color: #6fa3d2;"></span>#6fa3d2</td></tr>
+            <tr><td>String</td><td>Macchia Mediterranea</td><td><span class="color-swatch" style="background-color: #98bc6d;"></span>#98bc6d</td></tr>
+            <tr><td>Class/Tag</td><td>Laguna Chiara</td><td><span class="color-swatch" style="background-color: #8ebdb6;"></span>#8ebdb6</td></tr>
+            <tr><td>Constant</td><td>Terracotta</td><td><span class="color-swatch" style="background-color: #e89b7e;"></span>#e89b7e</td></tr>
+            <tr><td>Operator</td><td>Arenaria</td><td><span class="color-swatch" style="background-color: #cbae82;"></span>#cbae82</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>Nur Light Palette</h2>
+        <table class="palette-table">
+          <thead>
+            <tr>
+              <th>Usage</th>
+              <th>Name</th>
+              <th>Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Background</td><td>Orbace Chiaro</td><td><span class="color-swatch" style="background-color: #f8f5ed;"></span>#f8f5ed</td></tr>
+            <tr><td>Foreground</td><td>Basalto</td><td><span class="color-swatch" style="background-color: #5a5e6b;"></span>#5a5e6b</td></tr>
+            <tr><td>Comment</td><td>Ulivo Profondo</td><td><span class="color-swatch" style="background-color: #5a6a4d;"></span>#5a6a4d</td></tr>
+            <tr><td>Function</td><td>Corallo Vivo</td><td><span class="color-swatch" style="background-color: #e54837;"></span>#e54837</td></tr>
+            <tr><td>Variable</td><td>Ocra</td><td><span class="color-swatch" style="background-color: #c77f1a;"></span>#c77f1a</td></tr>
+            <tr><td>Number</td><td>Cardo Mariano</td><td><span class="color-swatch" style="background-color: #70568a;"></span>#70568a</td></tr>
+            <tr><td>Attribute</td><td>Oro Antico</td><td><span class="color-swatch" style="background-color: #b89415;"></span>#b89415</td></tr>
+            <tr><td>Keyword</td><td>Turchese Intenso</td><td><span class="color-swatch" style="background-color: #4a7fb5;"></span>#4a7fb5</td></tr>
+            <tr><td>String</td><td>Macchia Scura</td><td><span class="color-swatch" style="background-color: #6b8e3d;"></span>#6b8e3d</td></tr>
+            <tr><td>Class/Tag</td><td>Laguna Scura</td><td><span class="color-swatch" style="background-color: #5a8a82;"></span>#5a8a82</td></tr>
+            <tr><td>Constant</td><td>Terracotta Bruciata</td><td><span class="color-swatch" style="background-color: #c67558;"></span>#c67558</td></tr>
+            <tr><td>Operator</td><td>Arenaria Scura</td><td><span class="color-swatch" style="background-color: #9c8558;"></span>#9c8558</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section inspiration">
+        <h2>Palette and Inspirations</h2>
+        <p>Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores, and the rich heritage of the island of Sardinia, this theme offers a warm, relaxing, and accessible visual experience.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p><strong>Author:</strong> <a href="https://fenu.dev" style="color: #6fa3d2;">Michele Fenu</a></p>
+      <p>Licensed under the MIT License. Contributions are welcome!</p>
+    </div>
   </div>
 </body>
 </html>
