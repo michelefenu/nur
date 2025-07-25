@@ -8,7 +8,7 @@
 
 - Warm, relaxing and accessible color palette
 - Consistent in your entire development environment
-- Supports a wide range of programming languages
+- Optimized for web development
 
 ## Platforms
 
