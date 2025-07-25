@@ -1,4 +1,4 @@
-![](./images/icon.png)
+![](./assets/images/icon.png)
 
 # Nur Theme
 
