@@ -4,18 +4,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-[Nur](https://nur.fenu.dev) is designed to be easy on the eyes, and to provide a pleasant experience for long coding sessions.
+[Nur](https://nur.fenu.dev) is a Visual Studio Code theme designed to provide a pleasant experience for long coding sessions in any programming language.
 
 - Warm, relaxing and accessible color palette
-- Consistent in your entire development environment
-- Optimized for web development
+- Markup and Code highlighting optimized for web development
+- Light and Dark modes
 
-## Platforms
-
-- Visual Studio Code
-- Cursor
-- Vim/Neovim
-- Chrome DevTools
+The theme is available for Visual Studio Code and Cursor but new platforms are coming soon.
 
 ## Installation
 
@@ -26,10 +21,9 @@
 3. Type `Preferences: Color Theme` and select `Nur Theme`
 
 
-
 ## Palette and inspirations
 
-Rooted in ancient echoes of vibrant terracotta sunsets, ancient stones, crystalline shores, and the millennia-old heritage of the island of Sardinia, the theme brings a warm, relaxing, and accessible experience to your entire development environment.
+Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores, and the rich heritage of the island of Sardinia, this theme offers a warm, relaxing, and accessible visual experience.
 
 ### Nur Light
 
@@ -77,4 +71,4 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-While the license does not require it, I would genuinely appreciate hearing from you if you create derivative works or customizations based on this theme. Please feel free to reach out and share your projects!
+While the license does not require it, I would genuinely appreciate hearing from you if you create derivative works or customizations based on this theme.
