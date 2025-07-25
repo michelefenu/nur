@@ -1,20 +1,18 @@
-![](./assets/images/icon.png)
+![](./images/icon.png)
 
 # Nur Theme
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/michelefenu.nur-theme-vscode?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode) [![Open VSX Version](https://img.shields.io/open-vsx/v/michelefenu/nur-theme-open-vsx?label=Open%20VSX)](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Open VSX Version](https://img.shields.io/open-vsx/v/michelefenu/nur-theme-open-vsx?label=Open%20VSX)](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
 
-[Nur](https://nur.fenu.dev) is a Visual Studio Code theme designed to provide a pleasant experience for long coding sessions in any programming language.
+[Nur](https://nur.fenu.dev) is a Visual Studio Code and Cursor theme designed to provide a pleasant experience for long coding sessions in any programming language.
 
 - Warm, relaxing and accessible color palette
 - Markup and Code highlighting optimized for web development
 - Light and Dark modes
 
-The theme is available for Visual Studio Code and Cursor but new platforms are coming soon.
-
 ## Platforms
 
-- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme)
+- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode)
 - [Cursor](https://marketplace.cursor.com/items?itemName=michelefenu.nur-theme)
 
 
