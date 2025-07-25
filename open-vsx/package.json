@@ -1,9 +1,10 @@
 {
   "name": "nur-theme-open-vsx",
   "displayName": "Nur Theme",
-  "description": "Nur is an accessible dark theme inspired by Sardinian tradition, featuring warm, distinctive colors for software development.",
-  "version": "1.0.5",
+  "description": "Nur is a Visual Studio Code and Cursor theme designed to provide a pleasant experience for long coding sessions in any programming language.",
+  "version": "1.0.7",
   "publisher": "michelefenu",
+  "pricing": "Free",
   "repository": {
     "type": "git",
     "url": "https://github.com/michelefenu/nur"
