@@ -41,7 +41,7 @@ Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores
 
 | Uso        | Nome                 | Hex     |
 |------------|----------------------|---------|
-| Background | Obsidian             | #23272b |
+| Background | Ossidiana             | #23272b |
 | Foreground | Orbace               | #e2dbc4 |
 | Comment    | Ulivo                | #6e7f5c |
 | Function   | Corallo              | #fc7261 |

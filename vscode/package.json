@@ -2,7 +2,7 @@
   "name": "nur-theme-vscode",
   "displayName": "Nur Theme",
   "description": "Nur is an accessible dark theme inspired by Sardinian tradition, featuring warm, distinctive colors for software development.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "michelefenu",
   "repository": {
     "type": "git",
