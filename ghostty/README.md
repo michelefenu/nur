@@ -10,11 +10,17 @@
 - Markup and Code highlighting optimized for web development
 - Light and Dark modes
 
+### Usage
+1. Copy the contents of the `themes` directory to the `themes` directory in the [Ghostty configuration directory](https://ghostty.org/docs/config#file-location).
+2. Set `theme = nur-ghostty-<mode>.conf` in the [Ghostty configuration file](https://ghostty.org/docs/config#file-location), where `<mode>` is one of `light` or `dark`.
+3. Reload configuration from menu or restart Ghostty.
+
 ## Platforms
 
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode)
 - [Cursor](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
-- [Ghostty](https://ghostty.org/)
+- [Ghostty](./ghostty/README.md)
+
 
 ## Palette and inspirations
 

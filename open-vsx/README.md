@@ -14,6 +14,7 @@
 
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode)
 - [Cursor](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
+- [Ghostty](https://ghostty.org/)
 
 
 ## Palette and inspirations
