@@ -24,11 +24,11 @@
     <tr>
       <td align="center">
         <strong>Nur Light</strong><br>
-        <img src="./screenshots/light.png" alt="Nur Light Screenshot">
+        <img src="https://raw.githubusercontent.com/michelefenu/nur/main/assets/screenshots/light.png" alt="Nur Light Screenshot">
       </td>
       <td align="center">
         <strong>Nur Dark</strong><br>
-        <img src="./screenshots/dark.png" alt="Nur Dark Screenshot">
+        <img src="https://raw.githubusercontent.com/michelefenu/nur/main/assets/screenshots/dark.png" alt="Nur Dark Screenshot">
       </td>
     </tr>
   </table>
