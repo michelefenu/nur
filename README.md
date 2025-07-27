@@ -17,6 +17,24 @@
 - [Ghostty](./ghostty/README.md)
 - [Vim](./vim/README.md)
 
+## Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <strong>Nur Light</strong><br>
+        <img src="./assets/screenshots/light.png" alt="Nur Light Screenshot" >
+      </td>
+      <td align="center">
+        <strong>Nur Dark</strong><br>
+        <img src="./assets/screenshots/dark.png" alt="Nur Dark Screenshot">
+      </td>
+    </tr>
+  </table>
+</div>
+
+
 ## Palette and inspirations
 
 Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores, and the rich heritage of the island of Sardinia, this theme offers a warm, relaxing, and accessible visual experience.

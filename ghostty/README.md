@@ -21,6 +21,22 @@
 - [Cursor](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
 - [Ghostty](./ghostty/README.md)
 
+## Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <strong>Nur Light</strong><br>
+        <img src="./screenshots/light.png" alt="Nur Light Screenshot">
+      </td>
+      <td align="center">
+        <strong>Nur Dark</strong><br>
+        <img src="./screenshots/dark.png" alt="Nur Dark Screenshot">
+      </td>
+    </tr>
+  </table>
+</div>
 
 ## Palette and inspirations
 
