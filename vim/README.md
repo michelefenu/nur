@@ -10,6 +10,16 @@
 - Markup and Code highlighting optimized for web development
 - Light and Dark modes
 
+### Usage
+1. Copy and paste the content of the themes folder in your `~/.vim/colors/` directory.
+2. In your `.vimrc`, set:
+
+```
+syntax on
+" Replace <mode> with `light` or `dark`
+colorscheme nur-<mode>
+```
+
 ## Platforms
 
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode)
