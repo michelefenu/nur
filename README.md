@@ -20,7 +20,7 @@
 ## Screenshots
 
 <div align="center">
-  <table border="0">
+  <table style="border: 0;">
     <tr>
       <td align="center">
         <strong>Nur Light</strong><br>
