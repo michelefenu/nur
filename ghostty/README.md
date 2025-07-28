@@ -11,6 +11,7 @@
 - Light and Dark modes
 
 ### Usage
+
 1. Copy the contents of the `themes` directory to the `themes` directory in the [Ghostty configuration directory](https://ghostty.org/docs/config#file-location).
 2. Set `theme = nur-ghostty-<mode>.conf` in the [Ghostty configuration file](https://ghostty.org/docs/config#file-location), where `<mode>` is one of `light` or `dark`.
 3. Reload configuration from menu or restart Ghostty.
@@ -44,26 +45,26 @@ Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores
 
 ### Nur Light
 
-| Uso        | Nome                   | Hex       |
-|------------|------------------------|-----------|
-| Background | Orbace Chiaro          | #f8f5ed |
-| Foreground | Basalto                | #5a5e6b |
-| Comment    | Ulivo Profondo         | #5a6a4d |
-| Function   | Corallo Vivo           | #e54837 |
-| Variable   | Ocra                   | #c77f1a |
-| Number     | Cardo Mariano          | #70568a |
-| Attribute  | Oro Antico             | #b89415 |
-| Keyword    | Turchese Intenso       | #4a7fb5 |
-| String     | Macchia Scura          | #6b8e3d |
-| Class/Tag  | Laguna Scura           | #5a8a82 |
-| Constant   | Terracotta Bruciata    | #c67558 |
-| Operator   | Arenaria Scura         | #9c8558 |
+| Uso        | Nome                | Hex     |
+| ---------- | ------------------- | ------- |
+| Background | Orbace Chiaro       | #f8f5ed |
+| Foreground | Basalto             | #5a5e6b |
+| Comment    | Ulivo Profondo      | #5a6a4d |
+| Function   | Corallo Vivo        | #e54837 |
+| Variable   | Ocra                | #c77f1a |
+| Number     | Cardo Mariano       | #70568a |
+| Attribute  | Oro Antico          | #b89415 |
+| Keyword    | Turchese Intenso    | #4a7fb5 |
+| String     | Macchia Scura       | #6b8e3d |
+| Class/Tag  | Laguna Scura        | #5a8a82 |
+| Constant   | Terracotta Bruciata | #c67558 |
+| Operator   | Arenaria Scura      | #9c8558 |
 
 ### Nur Dark
 
 | Uso        | Nome                 | Hex     |
-|------------|----------------------|---------|
-| Background | Ossidiana             | #23272b |
+| ---------- | -------------------- | ------- |
+| Background | Ossidiana            | #23272b |
 | Foreground | Orbace               | #e2dbc4 |
 | Comment    | Ulivo                | #6e7f5c |
 | Function   | Corallo              | #fc7261 |
@@ -82,7 +83,7 @@ Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue.
+Would you like to see Nur on your favorite IDE or application? Contributions are highly welcome! Please feel free to open an issue to discuss a new port or submit a pull request with your implementation.
 
 ## License
 
