@@ -2,14 +2,14 @@
   "name": "nur-theme-open-vsx",
   "displayName": "Nur Theme",
   "description": "Nur is a Visual Studio Code and Cursor theme designed to provide a pleasant experience for long coding sessions in any programming language.",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "publisher": "michelefenu",
   "pricing": "Free",
   "repository": {
     "type": "git",
     "url": "https://github.com/michelefenu/nur"
   },
-  "icon": "images/icon.png",
+  "icon": "images/icon-128x128.png",
   "engines": {
     "vscode": "*"
   },

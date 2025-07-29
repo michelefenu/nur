@@ -1,4 +1,4 @@
-![](./assets/images/icon.png)
+![](./assets/images/icon-128x128.png)
 
 # Nur Theme
 
@@ -14,25 +14,18 @@
 
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode)
 - [Cursor](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
-- [Ghostty](./ghostty/README.md)
-- [Vim](./vim/README.md)
+- [Ghostty](https://github.com/michelefenu/nur/tree/main/ghostty)
+- [Vim](https://github.com/michelefenu/nur/tree/main/vim)
 
 ## Screenshots
 
-<div align="center">
-  <table style="border: 0;">
-    <tr>
-      <td align="center">
-        <strong>Nur Light</strong><br>
-        <img src="./assets/screenshots/light.png" alt="Nur Light Screenshot" >
-      </td>
-      <td align="center">
-        <strong>Nur Dark</strong><br>
-        <img src="./assets/screenshots/dark.png" alt="Nur Dark Screenshot">
-      </td>
-    </tr>
-  </table>
-</div>
+**Nur Light**
+
+![Nur Light Screenshot](./assets/screenshots/light.png)
+
+**Nur Dark**
+
+![Nur Dark Screenshot](./assets/screenshots/dark.png)
 
 ## Palette and inspirations
 
