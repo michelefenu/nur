@@ -1,5 +1,3 @@
-![](https://raw.githubusercontent.com/michelefenu/nur/refs/heads/main/assets/images/icon-128x128.png)
-
 # Nur Theme
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/michelefenu.nur-theme-vscode?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode) [![Open VSX Version](https://img.shields.io/open-vsx/v/michelefenu/nur-theme-open-vsx?label=Open%20VSX)](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
