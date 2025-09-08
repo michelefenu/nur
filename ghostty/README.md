@@ -24,17 +24,34 @@
 
 ## Screenshots
 
-**Nur Light**
-
-![Nur Light Screenshot](https://raw.githubusercontent.com/michelefenu/nur/refs/heads/main/assets/screenshots/dark.png)
-
 **Nur Dark**
 
-![Nur Dark Screenshot](https://raw.githubusercontent.com/michelefenu/nur/refs/heads/main/assets/screenshots/light.png)
+![Nur Dark Screenshot](https://raw.githubusercontent.com/michelefenu/nur/refs/heads/main/assets/screenshots/dark.png)
+
+**Nur Light**
+
+![Nur Light Screenshot](https://raw.githubusercontent.com/michelefenu/nur/refs/heads/main/assets/screenshots/light.png)
 
 ## Palette and inspirations
 
 Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores, and the rich heritage of the island of Sardinia, this theme offers a warm, relaxing, and accessible visual experience.
+
+### Nur Dark
+
+| Uso        | Nome                 | Hex     |
+| ---------- | -------------------- | ------- |
+| Background | Ossidiana            | #23272b |
+| Foreground | Orbace               | #e2dbc4 |
+| Comment    | Ulivo                | #6e7f5c |
+| Function   | Corallo              | #fc7261 |
+| Variable   | Ocra                 | #e19c3a |
+| Number     | Lavanda              | #9d80b7 |
+| Attribute  | Oro                  | #e8c547 |
+| Keyword    | Turchese             | #6fa3d2 |
+| String     | Macchia Mediterranea | #98bc6d |
+| Class/Tag  | Laguna Chiara        | #8ebdb6 |
+| Constant   | Terracotta           | #e89b7e |
+| Operator   | Arenaria             | #cbae82 |
 
 ### Nur Light
 
@@ -53,22 +70,6 @@ Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores
 | Constant   | Terracotta Bruciata | #c67558 |
 | Operator   | Arenaria Scura      | #9c8558 |
 
-### Nur Dark
-
-| Uso        | Nome                 | Hex     |
-| ---------- | -------------------- | ------- |
-| Background | Ossidiana            | #23272b |
-| Foreground | Orbace               | #e2dbc4 |
-| Comment    | Ulivo                | #6e7f5c |
-| Function   | Corallo              | #fc7261 |
-| Variable   | Ocra                 | #e19c3a |
-| Number     | Lavanda              | #9d80b7 |
-| Attribute  | Oro                  | #e8c547 |
-| Keyword    | Turchese             | #6fa3d2 |
-| String     | Macchia Mediterranea | #98bc6d |
-| Class/Tag  | Laguna Chiara        | #8ebdb6 |
-| Constant   | Terracotta           | #e89b7e |
-| Operator   | Arenaria             | #cbae82 |
 
 ## Author
 

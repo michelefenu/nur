@@ -31,23 +31,6 @@
 
 Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores, and the rich heritage of the island of Sardinia, this theme offers a warm, relaxing, and accessible visual experience.
 
-### Nur Light
-
-| Uso        | Nome                | Hex     |
-| ---------- | ------------------- | ------- |
-| Background | Orbace Chiaro       | #f8f5ed |
-| Foreground | Basalto             | #5a5e6b |
-| Comment    | Ulivo Profondo      | #5a6a4d |
-| Function   | Corallo Vivo        | #e54837 |
-| Variable   | Ocra                | #c77f1a |
-| Number     | Cardo Mariano       | #70568a |
-| Attribute  | Oro Antico          | #b89415 |
-| Keyword    | Turchese Intenso    | #4a7fb5 |
-| String     | Macchia Scura       | #6b8e3d |
-| Class/Tag  | Laguna Scura        | #5a8a82 |
-| Constant   | Terracotta Bruciata | #c67558 |
-| Operator   | Arenaria Scura      | #9c8558 |
-
 ### Nur Dark
 
 | Uso        | Nome                 | Hex     |
@@ -64,6 +47,23 @@ Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores
 | Class/Tag  | Laguna Chiara        | #8ebdb6 |
 | Constant   | Terracotta           | #e89b7e |
 | Operator   | Arenaria             | #cbae82 |
+
+### Nur Light
+
+| Uso        | Nome                | Hex     |
+| ---------- | ------------------- | ------- |
+| Background | Orbace Chiaro       | #f8f5ed |
+| Foreground | Basalto             | #5a5e6b |
+| Comment    | Ulivo Profondo      | #5a6a4d |
+| Function   | Corallo Vivo        | #e54837 |
+| Variable   | Ocra                | #c77f1a |
+| Number     | Cardo Mariano       | #70568a |
+| Attribute  | Oro Antico          | #b89415 |
+| Keyword    | Turchese Intenso    | #4a7fb5 |
+| String     | Macchia Scura       | #6b8e3d |
+| Class/Tag  | Laguna Scura        | #5a8a82 |
+| Constant   | Terracotta Bruciata | #c67558 |
+| Operator   | Arenaria Scura      | #9c8558 |
 
 ## Author
 
