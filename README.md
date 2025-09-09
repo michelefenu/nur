@@ -19,13 +19,13 @@
 
 ## Screenshots
 
-**Nur Light**
-
-![Nur Light Screenshot](https://raw.githubusercontent.com/michelefenu/nur/refs/heads/main/assets/screenshots/dark.png)
-
 **Nur Dark**
 
-![Nur Dark Screenshot](https://raw.githubusercontent.com/michelefenu/nur/refs/heads/main/assets/screenshots/light.png)
+![Nur Dark Screenshot](https://raw.githubusercontent.com/michelefenu/nur/refs/heads/main/assets/screenshots/dark.png)
+
+**Nur Light**
+
+![Nur Light Screenshot](https://raw.githubusercontent.com/michelefenu/nur/refs/heads/main/assets/screenshots/light.png)
 
 ## Palette and inspirations
 
