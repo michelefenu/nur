@@ -1,24 +1,18 @@
-;;; nur-light-theme.el --- Nur Light theme for Emacs -*- lexical-binding: t; -*-
+;;; nur-light-theme.el --- Nur Light theme for Emacs -*- lexical-binding: t -*-
 
-;; Copyright (C) 2025
-
-;; Author: [Your Name]
-;; Version: 1.0.0
+;; Author: Michele Fenu 
+;; Version: 1.0
 ;; Package-Requires: ((emacs "24.1"))
-;; Keywords: faces, theme, light
-;; URL: https://github.com/yourname/nur-light-theme
-
-;; This file is not part of GNU Emacs.
+;; Keywords: theme
+;; URL: https://github.com/michelefenu/nur
 
 ;;; Commentary:
-
-;; A warm, light theme inspired by natural tones.
-;; Ported from the VS Code Nur Light theme.
+;; A light theme ported from VS Code's Nur Light theme.
 
 ;;; Code:
 
 (deftheme nur-light
-  "A warm light theme with natural, earthy tones.")
+  "A light theme ported from VS Code's Nur Light theme.")
 
 (let ((class '((class color) (min-colors 89)))
       ;; Palette

@@ -1,10 +1,10 @@
 ;;; nur-dark-theme.el --- Nur Dark theme for Emacs -*- lexical-binding: t -*-
 
-;; Author: [Your Name]
+;; Author: Michele Fenu 
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "24.1"))
-;; Keywords: faces, theme
-;; URL: https://github.com/yourusername/nur-dark-theme
+;; Keywords: theme
+;; URL: https://github.com/michelefenu/nur
 
 ;;; Commentary:
 ;; A dark theme ported from VS Code's Nur Dark theme.
@@ -12,7 +12,7 @@
 ;;; Code:
 
 (deftheme nur-dark
-  "A warm, nature-inspired dark theme.")
+  "A dark theme ported from VS Code's Nur Dark theme.")
 
 ;; Color Palette
 (let ((class '((class color) (min-colors 89)))
