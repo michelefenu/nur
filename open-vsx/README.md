@@ -16,6 +16,7 @@
 - [Cursor](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
 - [Ghostty](https://ghostty.org/)
 - [Vim](https://www.vim.org/)
+- [Emacs](https://www.gnu.org/software/emacs/)
 
 ## Screenshots
 

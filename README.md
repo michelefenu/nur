@@ -16,6 +16,7 @@
 - [Cursor](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
 - [Ghostty](./ghostty/README.md)
 - [Vim](./vim/README.md)
+- [Emacs](./emacs/README.md)
 
 ## Screenshots
 

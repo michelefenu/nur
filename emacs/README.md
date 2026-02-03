@@ -1,4 +1,4 @@
-![](./images/icon.png)
+![](../../assets/images/icon.png)
 
 # Nur Theme
 
@@ -12,15 +12,20 @@
 
 ### Usage
 
-1. Copy the contents of the `themes` directory to the `themes` directory in the [Ghostty configuration directory](https://ghostty.org/docs/config#file-location).
-2. Set `theme = nur-ghostty-<mode>.conf` in the [Ghostty configuration file](https://ghostty.org/docs/config#file-location), where `<mode>` is one of `light` or `dark`.
-3. Reload configuration from menu or restart Ghostty.
+1. Copy `nur-dark-theme.el` and/or `nur-light-theme.el` into a directory of your choice, for example `~/.emacs.d/themes/`.
+2. In your Emacs init file (e.g. `init.el`), add the directory to `custom-theme-load-path` and load the theme:
+
+```elisp
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+;; Replace `nur-dark` with `nur-light` to use the light variant
+(load-theme 'nur-dark t)
+```
 
 ## Platforms
 
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode)
 - [Cursor](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
-- [Ghostty](./ghostty/README.md)
+- [Ghostty](https://ghostty.org/)
 - [Vim](https://www.vim.org/)
 - [Emacs](https://www.gnu.org/software/emacs/)
 
