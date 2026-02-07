@@ -228,13 +228,13 @@
 		<key>Alpha Component</key>
 		<real>0.5</real>
 		<key>Blue Component</key>
-		<real>0.0</real>
+		<real>0.38039216399192810</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.1491314172744751</real>
+		<real>0.44705882668495178</real>
 		<key>Red Component</key>
-		<real>1</real>
+		<real>0.98823529481887817</real>
 	</dict>
 	<key>Bold Color</key>
 	<dict>
@@ -267,13 +267,13 @@
 		<key>Alpha Component</key>
 		<real>0.25</real>
 		<key>Blue Component</key>
-		<real>1</real>
+		<real>0.71372550725936890</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.9268307089805603</real>
+		<real>0.74117648601531982</real>
 		<key>Red Component</key>
-		<real>0.70213186740875244</real>
+		<real>0.55686277151107788</real>
 	</dict>
 	<key>Cursor Text Color</key>
 	<dict>
@@ -306,13 +306,13 @@
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.73423302173614502</real>
+		<real>0.82352942228317261</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.35916060209274292</real>
+		<real>0.63921570777893066</real>
 		<key>Red Component</key>
-		<real>0.0</real>
+		<real>0.43529412150382996</real>
 	</dict>
 	<key>Selected Text Color</key>
 	<dict>
