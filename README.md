@@ -14,6 +14,8 @@
 
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode)
 - [Cursor](https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx)
+- [Zed](./zed/README.md)
+- [iTerm2](./iterm2/README.md)
 - [Ghostty](./ghostty/README.md)
 - [Vim](./vim/README.md)
 - [Emacs](./emacs/README.md)
