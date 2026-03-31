@@ -76,6 +76,8 @@ Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores
 
 Would you like to see Nur on your favorite IDE or application? Contributions are highly welcome! Please feel free to open an issue to discuss a new port or submit a pull request with your implementation.
 
+The `vscode/` and `open-vsx/` directories contain identical theme files — they target different marketplaces (VS Marketplace and Open VSX) but must stay in sync. When updating a theme, make sure to apply the same changes to both directories.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
