@@ -2,296 +2,914 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nur Theme</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nur — A Sardinian Color Theme</title>
+  <meta name="description" content="Nur is a color theme inspired by the landscapes of Sardinia. Available for VS Code, Cursor, Zed, Vim, Emacs, iTerm2, and Ghostty.">
+  <meta property="og:title" content="Nur — A Sardinian Color Theme">
+  <meta property="og:description" content="A color theme inspired by the landscapes of Sardinia. Warm tones for long sessions across every tool you use.">
+  <meta property="og:image" content="./assets/screenshots/dark.png">
+  <meta property="og:url" content="https://nur.fenu.dev">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="./assets/images/icon-128x128.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      background: #23272b;
-      color: #e2dbc4;
-      font-family: system-ui, sans-serif;
-      line-height: 1.6;
+    *, *::before, *::after {
+      box-sizing: border-box;
       margin: 0;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .header {
-      text-align: center;
-      padding: 2rem 0 3rem 0;
-      border-bottom: 1px solid rgba(110, 127, 92, 0.3);
-      margin-bottom: 3rem;
-    }
-    .header img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      margin: 0 0 0.5em 0;
-      font-size: 3em;
-      letter-spacing: 0.05em;
-      color: #e2dbc4;
-    }
-    .subtitle {
-      color: #bdb6a3;
-      font-size: 1.2em;
-      margin-bottom: 1.5em;
-    }
-    .badges {
-      display: flex;
-      gap: 0.5rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .badge {
-      background: #6fa3d2;
-      color: white;
-      padding: 0.3rem 0.8rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 0.9em;
-      transition: background 0.2s;
-    }
-    .badge:hover {
-      background: #5a8a82;
-    }
-    .content {
-      display: grid;
-      gap: 3rem;
-      margin-bottom: 3rem;
-    }
-    @media (max-width: 768px) {
-      .content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-    }
-    .section {
-      background: rgba(34, 39, 43, 0.95);
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-    }
-    .section h2 {
-      color: #fc7261;
-      margin-top: 0;
-      margin-bottom: 1rem;
-      font-size: 1.5em;
-    }
-    .section h3 {
-      color: #e8c547;
-      margin-top: 1.5rem;
-      margin-bottom: 0.8rem;
-    }
-    .features {
-      grid-column: 1 / -1;
-    }
-    .features ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1rem;
-      list-style: none;
       padding: 0;
     }
-    .features li {
-      background: rgba(110, 127, 92, 0.2);
-      padding: 1rem;
-      border-radius: 8px;
-      border-left: 4px solid #98bc6d;
+
+    :root {
+      --c-bg:      #23272b;
+      --c-bg2:     #2a2f34;
+      --c-fg:      #e2dbc4;
+      --c-comment: #6e7f5c;
+      --c-fn:      #fc7261;
+      --c-var:     #e19c3a;
+      --c-num:     #9d80b7;
+      --c-attr:    #e8c547;
+      --c-kw:      #6fa3d2;
+      --c-str:     #98bc6d;
+      --c-class:   #8ebdb6;
+      --c-const:   #e89b7e;
+      --c-op:      #cbae82;
+
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+      --section-padding: clamp(4rem, 8vw, 8rem);
+      --inner-width: 1100px;
+      --inner-pad: 2rem;
     }
-    .platforms {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+
+    html {
+      scroll-behavior: smooth;
     }
-    .platform-link {
-      background: #5a8a82;
-      color: white;
-      padding: 0.8rem 1.2rem;
-      border-radius: 8px;
+
+    body {
+      background-color: var(--c-bg);
+      color: var(--c-fg);
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      color: inherit;
       text-decoration: none;
-      transition: background 0.2s;
     }
-    .platform-link:hover {
-      background: #6fa3d2;
+
+    img {
+      display: block;
     }
-    .palette-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-    .palette-table th,
-    .palette-table td {
-      padding: 0.8rem;
-      text-align: left;
-      border-bottom: 1px solid rgba(110, 127, 92, 0.3);
-    }
-    .palette-table th {
-      background: rgba(110, 127, 92, 0.2);
-      color: #e8c547;
-    }
-    .color-swatch {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border-radius: 3px;
-      margin-right: 0.5rem;
-      vertical-align: middle;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    .screenshots {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 2rem;
-      margin-top: 1rem;
-    }
-    .screenshot {
-      text-align: center;
-    }
-    .screenshot h3 {
-      margin-bottom: 1rem;
-      color: #e8c547;
-    }
-    .screenshot-img {
-      width: 100%;
-      height: auto;
+
+    /* ─── Buttons ─────────────────────────────────────────── */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1.1rem;
       border-radius: 8px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.18s, color 0.18s, border-color 0.18s, opacity 0.18s;
+      text-decoration: none;
+      white-space: nowrap;
+      border: 1.5px solid transparent;
     }
-    @media (max-width: 768px) {
-      .screenshots {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+
+    .btn--primary {
+      background: var(--c-kw);
+      color: #1a1e22;
+      border-color: var(--c-kw);
+    }
+
+    .btn--primary:hover {
+      background: var(--c-class);
+      border-color: var(--c-class);
+    }
+
+    .btn--outline {
+      background: transparent;
+      color: var(--c-fg);
+      border-color: rgba(226,219,196,0.25);
+    }
+
+    .btn--outline:hover {
+      border-color: rgba(226,219,196,0.5);
+      background: rgba(226,219,196,0.05);
+    }
+
+    .btn--ghost {
+      background: transparent;
+      color: rgba(226,219,196,0.65);
+      border-color: transparent;
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+    }
+
+    .btn--ghost:hover {
+      color: var(--c-fg);
+    }
+
+    .btn--lg {
+      padding: 0.75rem 1.75rem;
+      font-size: 1rem;
+      border-radius: 10px;
+    }
+
+    /* ─── Section utilities ───────────────────────────────── */
+
+    .inner {
+      max-width: var(--inner-width);
+      margin: 0 auto;
+      padding: 0 var(--inner-pad);
+    }
+
+    .section {
+      padding-top: var(--section-padding);
+      padding-bottom: var(--section-padding);
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--c-comment);
+      margin-bottom: 1rem;
+    }
+
+    .section-heading {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--c-fg);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .section-sub {
+      font-size: 1rem;
+      color: rgba(226,219,196,0.5);
+      margin-bottom: 3rem;
+      max-width: 520px;
+    }
+
+    /* ─── Nav ─────────────────────────────────────────────── */
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(35,39,43,0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(110,127,92,0.15);
+    }
+
+    .nav__inner {
+      max-width: var(--inner-width);
+      margin: 0 auto;
+      padding: 0 var(--inner-pad);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav__brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--c-fg);
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .nav__brand img {
+      border-radius: 6px;
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .nav__cta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 480px) {
+      .nav__links {
+        display: none;
       }
     }
-    .inspiration {
-      grid-column: 1 / -1;
+
+    /* ─── Hero ────────────────────────────────────────────── */
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      font-style: italic;
-      color: #bdb6a3;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(111,163,210,0.08) 0%, transparent 70%);
+      padding: 6rem 2rem 4rem;
     }
+
+    .hero__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+      max-width: 600px;
+    }
+
+    .hero__logo {
+      border-radius: 22px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+
+    .hero__title {
+      font-size: clamp(3.5rem, 10vw, 6.5rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--c-fg);
+      line-height: 1;
+    }
+
+    .hero__tagline {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: rgba(226,219,196,0.6);
+      line-height: 1.6;
+      max-width: 440px;
+    }
+
+    .hero__cta {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
+    .hero__hint {
+      font-size: 0.78rem;
+      color: rgba(226,219,196,0.3);
+      letter-spacing: 0.03em;
+      margin-top: 0.25rem;
+    }
+
+    /* ─── Code Preview ────────────────────────────────────── */
+
+    .preview-section {
+      padding-top: var(--section-padding);
+      padding-bottom: var(--section-padding);
+    }
+
+    .preview-section__inner {
+      max-width: var(--inner-width);
+      margin: 0 auto;
+      padding: 0 var(--inner-pad);
+    }
+
+    .editor-window {
+      background: var(--c-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    .editor-window__titlebar {
+      background: rgba(255,255,255,0.04);
+      padding: 0.7rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .editor-window__dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .editor-window__dot--red    { background: #ff5f56; }
+    .editor-window__dot--yellow { background: #ffbd2e; }
+    .editor-window__dot--green  { background: #27c93f; }
+
+    .editor-window__filename {
+      margin-left: auto;
+      margin-right: auto;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: rgba(226,219,196,0.35);
+    }
+
+    .editor-window__code {
+      margin: 0;
+      padding: 1.5rem 2rem;
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      line-height: 1.8;
+      color: var(--c-fg);
+      overflow-x: auto;
+      tab-size: 2;
+      white-space: pre;
+    }
+
+    /* Token classes */
+    .t-comment  { color: var(--c-comment); font-style: italic; }
+    .t-keyword  { color: var(--c-kw); }
+    .t-fn       { color: var(--c-fn); }
+    .t-var      { color: var(--c-var); }
+    .t-str      { color: var(--c-str); }
+    .t-num      { color: var(--c-num); }
+    .t-class    { color: var(--c-class); }
+    .t-attr     { color: var(--c-attr); }
+    .t-op       { color: var(--c-op); }
+    .t-const    { color: var(--c-const); }
+
+    /* ─── Palette ─────────────────────────────────────────── */
+
+    .palette-variants {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .palette-variant__label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--c-comment);
+      margin-bottom: 1.5rem;
+    }
+
+    .swatch-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem 0.75rem;
+    }
+
+    .swatch {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+    }
+
+    .swatch__dot {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: var(--swatch-color);
+      border: 1.5px solid rgba(255,255,255,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      flex-shrink: 0;
+    }
+
+    .swatch__name {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--c-fg);
+      line-height: 1.3;
+    }
+
+    .swatch__role {
+      font-size: 0.68rem;
+      color: rgba(226,219,196,0.4);
+      line-height: 1.2;
+    }
+
+    .swatch__hex {
+      font-size: 0.68rem;
+      font-family: var(--font-mono);
+      color: rgba(226,219,196,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .palette-variants {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .swatch-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 400px) {
+      .swatch-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* ─── Platforms ───────────────────────────────────────── */
+
+    .platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .platform-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .platform-card:hover {
+      border-color: rgba(111,163,210,0.35);
+      background: rgba(111,163,210,0.04);
+    }
+
+    .platform-card--featured {
+      border-color: rgba(111,163,210,0.22);
+      background: rgba(111,163,210,0.05);
+    }
+
+    .platform-card__name {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--c-fg);
+    }
+
+    .platform-card__desc {
+      font-size: 0.85rem;
+      color: rgba(226,219,196,0.5);
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .platform-card .btn {
+      align-self: flex-start;
+      margin-top: 0.5rem;
+    }
+
+    /* ─── Screenshots ─────────────────────────────────────── */
+
+    .screenshots-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .screenshot-fig {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .screenshot-fig__label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--c-comment);
+    }
+
+    .screenshot-fig__img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+
+    @media (max-width: 768px) {
+      .screenshots-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ─── Footer ──────────────────────────────────────────── */
+
     .footer {
+      border-top: 1px solid rgba(110,127,92,0.15);
+      padding: 3rem 2rem;
+    }
+
+    .footer__inner {
+      max-width: var(--inner-width);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
       text-align: center;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(110, 127, 92, 0.3);
-      color: #bdb6a3;
+    }
+
+    .footer__brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: rgba(226,219,196,0.5);
+    }
+
+    .footer__brand img {
+      border-radius: 4px;
+      opacity: 0.7;
+    }
+
+    .footer__copy {
+      font-size: 0.85rem;
+      color: rgba(226,219,196,0.4);
+      line-height: 1.6;
+    }
+
+    .footer__link {
+      color: var(--c-kw);
+      text-decoration: none;
+    }
+
+    .footer__link:hover {
+      text-decoration: underline;
+    }
+
+    /* ─── Divider ─────────────────────────────────────────── */
+
+    .section-divider {
+      height: 1px;
+      background: rgba(110,127,92,0.12);
+      max-width: var(--inner-width);
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="./assets/images/icon-128x128.png" alt="Nur Theme Icon">
-      <h1>Nur Theme</h1>
-      <p class="subtitle">A Visual Studio Code and Cursor theme designed to provide a pleasant experience for long coding sessions in any programming language.</p>
-      <div class="badges">
-        <a href="https://opensource.org/licenses/MIT" class="badge">MIT License</a>
-        <a href="https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode" class="badge">VS Marketplace</a>
-        <a href="https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx" class="badge">Open VSX</a>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#">
+        <img src="./assets/images/icon-128x128.png" alt="Nur" width="28" height="28">
+        Nur
+      </a>
+      <div class="nav__links">
+        <a class="btn btn--ghost" href="#palette">Palette</a>
+        <a class="btn btn--ghost" href="#platforms">Install</a>
+      </div>
+      <div class="nav__cta">
+        <a class="btn btn--primary" href="https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode" target="_blank" rel="noopener">Get for VS Code</a>
       </div>
     </div>
+  </nav>
 
-    <div class="content">
-      <div class="section features">
-        <h2>Features</h2>
-        <ul>
-          <li><strong>Warm, relaxing and accessible color palette</strong> - Designed for comfortable long coding sessions</li>
-          <li><strong>Markup and Code highlighting optimized for web development</strong> - Enhanced syntax highlighting</li>
-          <li><strong>Light and Dark modes</strong> - Choose the mode that suits your preference</li>
-        </ul>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <img class="hero__logo" src="./assets/images/icon-128x128.png" alt="Nur Theme" width="96" height="96">
+      <h1 class="hero__title">Nur</h1>
+      <p class="hero__tagline">A color theme inspired by Sardinia.<br>Warm tones for long sessions across every tool you use.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--lg" href="https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode" target="_blank" rel="noopener">Install for VS Code</a>
+        <a class="btn btn--outline btn--lg" href="#platforms">All Platforms</a>
       </div>
+      <p class="hero__hint">VS Code &middot; Cursor &middot; Zed &middot; Vim &middot; Emacs &middot; iTerm2 &middot; Ghostty</p>
+    </div>
+  </section>
 
-      <div class="section">
-        <h2>Platforms</h2>
-        <div class="platforms">
-          <a href="https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode" class="platform-link">Visual Studio Code</a>
-          <a href="https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx" class="platform-link">Cursor</a>
-          <a href="https://ghostty.org" class="platform-link">Ghostty</a>
-          <a href="https://www.vim.org/" class="platform-link">Vim</a>
-          <a href="https://www.gnu.org/software/emacs/" class="platform-link">Emacs</a>
+  <div class="section-divider"></div>
+
+  <!-- Code Preview -->
+  <section class="preview-section section" id="preview">
+    <div class="preview-section__inner">
+      <p class="section-label" style="text-align:center">See it in action</p>
+      <div class="editor-window">
+        <div class="editor-window__titlebar">
+          <span class="editor-window__dot editor-window__dot--red"></span>
+          <span class="editor-window__dot editor-window__dot--yellow"></span>
+          <span class="editor-window__dot editor-window__dot--green"></span>
+          <span class="editor-window__filename">landscape.ts</span>
         </div>
-      </div>
+        <pre class="editor-window__code"><code><span class="t-comment">// Sardinian landscape renderer</span>
+<span class="t-keyword">import</span> <span class="t-keyword">type</span> { <span class="t-class">Palette</span> } <span class="t-keyword">from</span> <span class="t-str">'./colors'</span>
 
-      <div class="section">
-        <h2>Screenshots</h2>
-        <div class="screenshots">
-          <div class="screenshot">
-            <h3>Dark Mode</h3>
-            <img src="./assets/screenshots/dark.png" alt="Nur Theme Dark Mode" class="screenshot-img">
-          </div>
-          <div class="screenshot">
-            <h3>Light Mode</h3>
-            <img src="./assets/screenshots/light.png" alt="Nur Theme Light Mode" class="screenshot-img">
+<span class="t-keyword">const</span> <span class="t-const">GOLDEN_HOUR</span> <span class="t-op">=</span> <span class="t-num">3600</span>
+<span class="t-keyword">const</span> <span class="t-const">MAX_DEPTH</span>   <span class="t-op">=</span> <span class="t-num">128</span>
+
+<span class="t-keyword">interface</span> <span class="t-class">Landscape</span> {
+  <span class="t-attr">name</span><span class="t-op">:</span>        <span class="t-class">string</span>
+  <span class="t-attr">palette</span><span class="t-op">:</span>     <span class="t-class">Palette</span>
+  <span class="t-attr">coordinates</span><span class="t-op">:</span> [<span class="t-class">number</span>, <span class="t-class">number</span>]
+}
+
+<span class="t-keyword">async function</span> <span class="t-fn">renderScene</span>(
+  <span class="t-var">scene</span><span class="t-op">:</span> <span class="t-class">Landscape</span>,
+  <span class="t-var">depth</span><span class="t-op">:</span> <span class="t-class">number</span> <span class="t-op">=</span> <span class="t-num">0</span>
+)<span class="t-op">:</span> <span class="t-class">Promise</span><span class="t-op">&lt;</span><span class="t-class">void</span><span class="t-op">&gt;</span> {
+  <span class="t-keyword">if</span> (<span class="t-var">depth</span> <span class="t-op">&gt;</span> <span class="t-const">MAX_DEPTH</span>) <span class="t-keyword">return</span>
+
+  <span class="t-keyword">const</span> { <span class="t-var">name</span>, <span class="t-var">palette</span>, <span class="t-var">coordinates</span> } <span class="t-op">=</span> <span class="t-var">scene</span>
+  <span class="t-keyword">const</span> <span class="t-var">label</span> <span class="t-op">=</span> <span class="t-str">`Rendering <span class="t-op">${</span><span class="t-var">name</span><span class="t-op">}</span> at depth <span class="t-op">${</span><span class="t-var">depth</span><span class="t-op">}</span>`</span>
+
+  <span class="t-var">console</span>.<span class="t-fn">log</span>(<span class="t-var">label</span>)
+  <span class="t-keyword">await</span> <span class="t-fn">applyPalette</span>(<span class="t-var">palette</span>, <span class="t-var">coordinates</span>)
+  <span class="t-keyword">await</span> <span class="t-fn">renderScene</span>(<span class="t-var">scene</span>, <span class="t-var">depth</span> <span class="t-op">+</span> <span class="t-num">1</span>)
+}
+
+<span class="t-keyword">export const</span> <span class="t-var">sardinia</span><span class="t-op">:</span> <span class="t-class">Landscape</span> <span class="t-op">=</span> {
+  <span class="t-attr">name</span><span class="t-op">:</span>        <span class="t-str">'Sardinia'</span>,
+  <span class="t-attr">palette</span><span class="t-op">:</span>     <span class="t-var">nurDark</span>,
+  <span class="t-attr">coordinates</span><span class="t-op">:</span> [<span class="t-num">40.1209</span>, <span class="t-num">9.0129</span>],
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Palette -->
+  <section class="section" id="palette">
+    <div class="inner">
+      <p class="section-label">Colors</p>
+      <h2 class="section-heading">The Palette</h2>
+      <p class="section-sub">Named after the Sardinian landscape. Every color has a story.</p>
+
+      <div class="palette-variants">
+
+        <div class="palette-variant">
+          <p class="palette-variant__label">Nur Dark</p>
+          <div class="swatch-grid">
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#23272b; border-color: rgba(255,255,255,0.2)"></div>
+              <span class="swatch__name">Ossidiana</span>
+              <span class="swatch__role">Background</span>
+              <span class="swatch__hex">#23272b</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#e2dbc4"></div>
+              <span class="swatch__name">Orbace</span>
+              <span class="swatch__role">Foreground</span>
+              <span class="swatch__hex">#e2dbc4</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#6e7f5c"></div>
+              <span class="swatch__name">Ulivo</span>
+              <span class="swatch__role">Comment</span>
+              <span class="swatch__hex">#6e7f5c</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#fc7261"></div>
+              <span class="swatch__name">Corallo</span>
+              <span class="swatch__role">Function</span>
+              <span class="swatch__hex">#fc7261</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#e19c3a"></div>
+              <span class="swatch__name">Ocra</span>
+              <span class="swatch__role">Variable</span>
+              <span class="swatch__hex">#e19c3a</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#9d80b7"></div>
+              <span class="swatch__name">Lavanda</span>
+              <span class="swatch__role">Number</span>
+              <span class="swatch__hex">#9d80b7</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#e8c547"></div>
+              <span class="swatch__name">Oro</span>
+              <span class="swatch__role">Attribute</span>
+              <span class="swatch__hex">#e8c547</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#6fa3d2"></div>
+              <span class="swatch__name">Turchese</span>
+              <span class="swatch__role">Keyword</span>
+              <span class="swatch__hex">#6fa3d2</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#98bc6d"></div>
+              <span class="swatch__name">Macchia</span>
+              <span class="swatch__role">String</span>
+              <span class="swatch__hex">#98bc6d</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#8ebdb6"></div>
+              <span class="swatch__name">Laguna</span>
+              <span class="swatch__role">Class/Tag</span>
+              <span class="swatch__hex">#8ebdb6</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#e89b7e"></div>
+              <span class="swatch__name">Terracotta</span>
+              <span class="swatch__role">Constant</span>
+              <span class="swatch__hex">#e89b7e</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#cbae82"></div>
+              <span class="swatch__name">Arenaria</span>
+              <span class="swatch__role">Operator</span>
+              <span class="swatch__hex">#cbae82</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="section">
-        <h2>Nur Dark Palette</h2>
-        <table class="palette-table">
-          <thead>
-            <tr>
-              <th>Usage</th>
-              <th>Name</th>
-              <th>Color</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Background</td><td>Ossidiana</td><td><span class="color-swatch" style="background-color: #23272b;"></span>#23272b</td></tr>
-            <tr><td>Foreground</td><td>Orbace</td><td><span class="color-swatch" style="background-color: #e2dbc4;"></span>#e2dbc4</td></tr>
-            <tr><td>Comment</td><td>Ulivo</td><td><span class="color-swatch" style="background-color: #6e7f5c;"></span>#6e7f5c</td></tr>
-            <tr><td>Function</td><td>Corallo</td><td><span class="color-swatch" style="background-color: #fc7261;"></span>#fc7261</td></tr>
-            <tr><td>Variable</td><td>Ocra</td><td><span class="color-swatch" style="background-color: #e19c3a;"></span>#e19c3a</td></tr>
-            <tr><td>Number</td><td>Lavanda</td><td><span class="color-swatch" style="background-color: #9d80b7;"></span>#9d80b7</td></tr>
-            <tr><td>Attribute</td><td>Oro</td><td><span class="color-swatch" style="background-color: #e8c547;"></span>#e8c547</td></tr>
-            <tr><td>Keyword</td><td>Turchese</td><td><span class="color-swatch" style="background-color: #6fa3d2;"></span>#6fa3d2</td></tr>
-            <tr><td>String</td><td>Macchia Mediterranea</td><td><span class="color-swatch" style="background-color: #98bc6d;"></span>#98bc6d</td></tr>
-            <tr><td>Class/Tag</td><td>Laguna Chiara</td><td><span class="color-swatch" style="background-color: #8ebdb6;"></span>#8ebdb6</td></tr>
-            <tr><td>Constant</td><td>Terracotta</td><td><span class="color-swatch" style="background-color: #e89b7e;"></span>#e89b7e</td></tr>
-            <tr><td>Operator</td><td>Arenaria</td><td><span class="color-swatch" style="background-color: #cbae82;"></span>#cbae82</td></tr>
-          </tbody>
-        </table>
-      </div>
+        <div class="palette-variant">
+          <p class="palette-variant__label">Nur Light</p>
+          <div class="swatch-grid">
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#f8f5ed; border-color: rgba(0,0,0,0.15)"></div>
+              <span class="swatch__name">Orbace Chiaro</span>
+              <span class="swatch__role">Background</span>
+              <span class="swatch__hex">#f8f5ed</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#5a5e6b"></div>
+              <span class="swatch__name">Basalto</span>
+              <span class="swatch__role">Foreground</span>
+              <span class="swatch__hex">#5a5e6b</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#5a6a4d"></div>
+              <span class="swatch__name">Ulivo Profondo</span>
+              <span class="swatch__role">Comment</span>
+              <span class="swatch__hex">#5a6a4d</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#e54837"></div>
+              <span class="swatch__name">Corallo Vivo</span>
+              <span class="swatch__role">Function</span>
+              <span class="swatch__hex">#e54837</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#c77f1a"></div>
+              <span class="swatch__name">Ocra</span>
+              <span class="swatch__role">Variable</span>
+              <span class="swatch__hex">#c77f1a</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#70568a"></div>
+              <span class="swatch__name">Cardo Mariano</span>
+              <span class="swatch__role">Number</span>
+              <span class="swatch__hex">#70568a</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#b89415"></div>
+              <span class="swatch__name">Oro Antico</span>
+              <span class="swatch__role">Attribute</span>
+              <span class="swatch__hex">#b89415</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#4a7fb5"></div>
+              <span class="swatch__name">Turchese Intenso</span>
+              <span class="swatch__role">Keyword</span>
+              <span class="swatch__hex">#4a7fb5</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#6b8e3d"></div>
+              <span class="swatch__name">Macchia Scura</span>
+              <span class="swatch__role">String</span>
+              <span class="swatch__hex">#6b8e3d</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#5a8a82"></div>
+              <span class="swatch__name">Laguna Scura</span>
+              <span class="swatch__role">Class/Tag</span>
+              <span class="swatch__hex">#5a8a82</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#c67558"></div>
+              <span class="swatch__name">Terracotta Bruciata</span>
+              <span class="swatch__role">Constant</span>
+              <span class="swatch__hex">#c67558</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch__dot" style="--swatch-color:#9c8558"></div>
+              <span class="swatch__name">Arenaria Scura</span>
+              <span class="swatch__role">Operator</span>
+              <span class="swatch__hex">#9c8558</span>
+            </div>
+          </div>
+        </div>
 
-      <div class="section">
-        <h2>Nur Light Palette</h2>
-        <table class="palette-table">
-          <thead>
-            <tr>
-              <th>Usage</th>
-              <th>Name</th>
-              <th>Color</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Background</td><td>Orbace Chiaro</td><td><span class="color-swatch" style="background-color: #f8f5ed;"></span>#f8f5ed</td></tr>
-            <tr><td>Foreground</td><td>Basalto</td><td><span class="color-swatch" style="background-color: #5a5e6b;"></span>#5a5e6b</td></tr>
-            <tr><td>Comment</td><td>Ulivo Profondo</td><td><span class="color-swatch" style="background-color: #5a6a4d;"></span>#5a6a4d</td></tr>
-            <tr><td>Function</td><td>Corallo Vivo</td><td><span class="color-swatch" style="background-color: #e54837;"></span>#e54837</td></tr>
-            <tr><td>Variable</td><td>Ocra</td><td><span class="color-swatch" style="background-color: #c77f1a;"></span>#c77f1a</td></tr>
-            <tr><td>Number</td><td>Cardo Mariano</td><td><span class="color-swatch" style="background-color: #70568a;"></span>#70568a</td></tr>
-            <tr><td>Attribute</td><td>Oro Antico</td><td><span class="color-swatch" style="background-color: #b89415;"></span>#b89415</td></tr>
-            <tr><td>Keyword</td><td>Turchese Intenso</td><td><span class="color-swatch" style="background-color: #4a7fb5;"></span>#4a7fb5</td></tr>
-            <tr><td>String</td><td>Macchia Scura</td><td><span class="color-swatch" style="background-color: #6b8e3d;"></span>#6b8e3d</td></tr>
-            <tr><td>Class/Tag</td><td>Laguna Scura</td><td><span class="color-swatch" style="background-color: #5a8a82;"></span>#5a8a82</td></tr>
-            <tr><td>Constant</td><td>Terracotta Bruciata</td><td><span class="color-swatch" style="background-color: #c67558;"></span>#c67558</td></tr>
-            <tr><td>Operator</td><td>Arenaria Scura</td><td><span class="color-swatch" style="background-color: #9c8558;"></span>#9c8558</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="section inspiration">
-        <h2>Palette and Inspirations</h2>
-        <p>Inspired by the vibrant terracotta sunsets, ancient stones, crystal-clear shores, and the rich heritage of the island of Sardinia, this theme offers a warm, relaxing, and accessible visual experience.</p>
       </div>
     </div>
+  </section>
 
-    <div class="footer">
-      <p><strong>Author:</strong> <a href="https://fenu.dev" style="color: #6fa3d2;">Michele Fenu</a></p>
-      <p>Licensed under the MIT License. Contributions are welcome!</p>
+  <div class="section-divider"></div>
+
+  <!-- Platforms -->
+  <section class="section" id="platforms">
+    <div class="inner">
+      <p class="section-label">Install</p>
+      <h2 class="section-heading">Your whole environment.</h2>
+      <p class="section-sub">Available across every tool in your workflow.</p>
+
+      <div class="platforms-grid">
+
+        <article class="platform-card platform-card--featured">
+          <h3 class="platform-card__name">VS Code</h3>
+          <p class="platform-card__desc">Install from the Visual Studio Marketplace in one click.</p>
+          <a class="btn btn--primary" href="https://marketplace.visualstudio.com/items?itemName=michelefenu.nur-theme-vscode" target="_blank" rel="noopener">Install →</a>
+        </article>
+
+        <article class="platform-card platform-card--featured">
+          <h3 class="platform-card__name">Cursor</h3>
+          <p class="platform-card__desc">Install from the Open VSX Registry.</p>
+          <a class="btn btn--primary" href="https://open-vsx.org/extension/michelefenu/nur-theme-open-vsx" target="_blank" rel="noopener">Install →</a>
+        </article>
+
+        <article class="platform-card">
+          <h3 class="platform-card__name">Zed</h3>
+          <p class="platform-card__desc">Manual install via the Zed themes directory.</p>
+          <a class="btn btn--outline" href="https://github.com/michelefenu/nuraghe/tree/main/zed" target="_blank" rel="noopener">View instructions →</a>
+        </article>
+
+        <article class="platform-card">
+          <h3 class="platform-card__name">Vim</h3>
+          <p class="platform-card__desc">Drop-in colorscheme for Vim and Neovim.</p>
+          <a class="btn btn--outline" href="https://github.com/michelefenu/nuraghe/tree/main/vim" target="_blank" rel="noopener">View instructions →</a>
+        </article>
+
+        <article class="platform-card">
+          <h3 class="platform-card__name">Emacs</h3>
+          <p class="platform-card__desc">Load the theme with <code style="font-family:var(--font-mono);font-size:0.8em;color:var(--c-class)">load-theme</code>.</p>
+          <a class="btn btn--outline" href="https://github.com/michelefenu/nuraghe/tree/main/emacs" target="_blank" rel="noopener">View instructions →</a>
+        </article>
+
+        <article class="platform-card">
+          <h3 class="platform-card__name">Ghostty</h3>
+          <p class="platform-card__desc">Copy to your Ghostty config directory and set the theme.</p>
+          <a class="btn btn--outline" href="https://github.com/michelefenu/nuraghe/tree/main/ghostty" target="_blank" rel="noopener">View instructions →</a>
+        </article>
+
+        <article class="platform-card">
+          <h3 class="platform-card__name">iTerm2</h3>
+          <p class="platform-card__desc">Import the <code style="font-family:var(--font-mono);font-size:0.8em;color:var(--c-class)">.itermcolors</code> file directly into iTerm2 preferences.</p>
+          <a class="btn btn--outline" href="https://github.com/michelefenu/nuraghe/tree/main/iterm2" target="_blank" rel="noopener">View instructions →</a>
+        </article>
+
+      </div>
     </div>
-  </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Screenshots -->
+  <section class="section" id="screenshots">
+    <div class="inner">
+      <p class="section-label">Preview</p>
+      <h2 class="section-heading">Dark &amp; Light</h2>
+      <p class="section-sub">Two variants, one consistent language.</p>
+
+      <div class="screenshots-grid">
+        <figure class="screenshot-fig">
+          <figcaption class="screenshot-fig__label">Nur Dark</figcaption>
+          <img class="screenshot-fig__img" src="./assets/screenshots/dark.png" alt="Nur Dark theme in VS Code" loading="lazy">
+        </figure>
+        <figure class="screenshot-fig">
+          <figcaption class="screenshot-fig__label">Nur Light</figcaption>
+          <img class="screenshot-fig__img" src="./assets/screenshots/light.png" alt="Nur Light theme in VS Code" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="./assets/images/icon-128x128.png" alt="Nur" width="20" height="20">
+        Nur Theme
+      </div>
+      <p class="footer__copy">
+        Made with care by <a class="footer__link" href="https://fenu.dev" target="_blank" rel="noopener">Michele Fenu</a>.
+        Released under the <a class="footer__link" href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>.
+        &nbsp;&middot;&nbsp;
+        <a class="footer__link" href="https://github.com/michelefenu/nuraghe" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
